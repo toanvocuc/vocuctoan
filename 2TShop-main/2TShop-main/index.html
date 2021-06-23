@@ -1,0 +1,408 @@
+
+<!DOCTYPE html>
+<html lang="vi-VN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2T-Shop</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Two tables team">
+    <meta name="copyright" content="Two tables team">
+    <!-- > -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="/2TShop-main/Resources/css/style.css">
+    <link rel="stylesheet" href="/2TShop-main/Resources/css/queries.css">
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b6328132d1.js" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <!-- BOOTSTRAP 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+<body>
+    <!-- HEADER -->
+    <header id="home">
+        <nav class="navbar navbar-expand-lg bg-transparent navbar-dark" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#home"><img class="logo" id="logo" src="https://storage.googleapis.com/cdn.nhanh.vn/store/16762/store_1608284412_763.png" alt="logo"> </a>
+                <button id="nav-button" class="navbar-toggler" onclick="hidText()" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Nav List -->
+                    <ul class="navbar-nav ms-auto text-center">
+                        <li class="nav-item me-4"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item me-4 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Shop
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">Men's</a></li>
+                              <li><a class="dropdown-item" href="#">Women's</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item me-4 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Top
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">T-shirt</a></li>
+                              <li><a class="dropdown-item" href="#">Flannel</a></li>
+                              <li><a class="dropdown-item" href="#">Longsleeves</a></li>
+                              <li><a class="dropdown-item" href="#">Sweater</a></li>
+                              <li><a class="dropdown-item" href="#">Hoodie</a></li>
+                              <li><a class="dropdown-item" href="#">Outwear</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item me-4 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Bottom
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">Shorts</a></li>
+                              <li><a class="dropdown-item" href="#">Cargo</a></li>
+                              <li><a class="dropdown-item" href="#">Denim</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item me-4 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Accessories
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">Hats</a></li>
+                              <li><a class="dropdown-item" href="#">BackPacks</a></li>
+                              <li><a class="dropdown-item" href="#">Sock</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item me-4 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Sale
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">Sale 01/01</a></li>
+                              <li><a class="dropdown-divider" href="#"></a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item me-4"><a class="nav-link" href="#"><i class="fas fa-search"></i></a></li> 
+                        <li class="nav-item me-4"><a class="nav-link" href="#"> <i class="fa fa-user-circle"></i></a></li> 
+                        <li class="nav-item me-4"><a class="nav-link" href="#"> <i class="fas fa-shopping-bag"></i></a></li>           
+                    </ul>
+                </div>
+                
+            </div>
+        </nav>
+            <div class="load"></div>
+            <div class="content">
+                <div class="heading-main-box d-inline-block" style=" width: 100%; visibility: visible; top:60vh;" id="headerText">
+                    <h2>Find your Own Style</h2>
+                </div>
+                <button></button>
+            </div>
+    </header>
+
+
+
+
+
+    <!-- Catergories Section -->
+    <section id="aa-promo">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="aa-promo-area">
+                <div class="row">
+                  <!-- promo left -->
+                  <div class="col-md-5 no-padding">                
+                    <div class="aa-promo-left">
+                      <div class="aa-promo-banner">                    
+                        <img src="/2TShop-main/Resources/img/promo-banner-1.jpg" alt="img">                    
+                        <div class="aa-prom-content">
+                          <!-- <span>75% Off</span> -->
+                          <h4><a href="#">sale</a></h4>                      
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- promo right -->
+                  <div class="col-md-7 no-padding">
+                    <div class="aa-promo-right">
+                      <div class="aa-single-promo-right">
+                        <div class="aa-promo-banner">                      
+                          <img src="/2TShop-main/Resources/img/promo-banner-3.jpg" alt="img">                      
+                          <div class="aa-prom-content">
+                            <!-- <span>Exclusive </span> -->
+                            <h4><a href="#">top</a></h4>                        
+                          </div>
+                        </div>
+                      </div>
+                      <div class="aa-single-promo-right">
+                        <div class="aa-promo-banner">                      
+                          <img src="/2TShop-main/Resources/img/promo-banner-3.jpg" alt="img">                      
+                          <div class="aa-prom-content">
+                            <!-- <span>Sale Off</span> -->
+                            <h4><a href="#">  Accessories </a></h4>                        
+                          </div>
+                        </div>
+                      </div>
+                      <div class="aa-single-promo-right">
+                        <div class="aa-promo-banner">                      
+                          <img src="/2TShop-main/Resources/img/promo-banner-3.jpg" alt="img">                      
+                          <div class="aa-prom-content">
+                            <!-- <span>New Arrivals</span> -->
+                            <h4><a href="#">Botoom</a></h4>                        
+                          </div>
+                        </div>
+                      </div>
+                      <div class="aa-single-promo-right">
+                        <div class="aa-promo-banner">                      
+                          <img src="/2TShop-main/Resources/img/promo-banner-3.jpg" alt="img">                      
+                          <div class="aa-prom-content">
+                            <!-- <span>25% Off</span> -->
+                            <h4><a href="#">hot</a></h4>                        
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+    
+    <div class="container- new-product text-center">
+        <h2 class="new-product-heading-text">
+            New Arrivals
+        </h2>
+        <div id="slides" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+              <li data-target="#slides" data-slide-to="0" class="active"></li>
+              <li data-target="#slides" data-slide-to="1"></li>
+              <li data-target="#slides" data-slide-to="2"></li>
+              <li data-target="#slides" data-slide-to="3"></li>
+              <li data-target="#slides" data-slide-to="4"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="#">
+                            <figure class="box-new-product-fig">
+                                <img src="Resources/img/fashion/1.jpg" alt="">
+                                <figcaption class="box-new-product-figcaption">
+                                    <a href="#">
+                                        <button type="button" class="btn btn-outline-secondary"><i class="fas fa-search-dollar"></i></button>
+                                    </a>
+                                </figcaption>
+                                <p class="price">500$</p>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#">
+                            <figure class="box-new-product-fig">
+                                <img src="Resources/img/fashion/1.jpg" alt="">
+                                <figcaption class="box-new-product-figcaption">
+                                    <a href="#">
+                                        <button type="button" class="btn btn-outline-secondary"><i class="fas fa-search-dollar"></i></button>
+                                    </a>
+                                </figcaption>
+                                <p class="price">500$</p>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#">
+                            <figure class="box-new-product-fig">
+                                <img src="Resources/img/fashion/1.jpg" alt="">
+                                <figcaption class="box-new-product-figcaption">
+                                    <a href="#">
+                                        <button type="button" class="btn btn-outline-secondary"><i class="fas fa-search-dollar"></i></button>
+                                    </a>
+                                </figcaption>
+                                <p class="price">500$</p>
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="#">
+                            <figure class="box-new-product-fig">
+                                <img src="Resources/img/fashion/1.jpg" alt="">
+                                <figcaption class="box-new-product-figcaption">
+                                    <a href="#">
+                                        <button type="button" class="btn btn-outline-secondary"><i class="fas fa-search-dollar"></i></button>
+                                    </a>
+                                </figcaption>
+                                <p class="price">500$</p>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#">
+                            <figure class="box-new-product-fig">
+                                <img src="Resources/img/fashion/1.jpg" alt="">
+                                <figcaption class="box-new-product-figcaption">
+                                    <a href="#">
+                                        <button type="button" class="btn btn-outline-secondary"><i class="fas fa-search-dollar"></i></button>
+                                    </a>
+                                </figcaption>
+                                <p class="price">500$</p>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#">
+                            <figure class="box-new-product-fig">
+                                <img src="Resources/img/fashion/1.jpg" alt="">
+                                <figcaption class="box-new-product-figcaption">
+                                    <a href="#">
+                                        <button type="button" class="btn btn-outline-secondary"><i class="fas fa-search-dollar"></i></button>
+                                    </a>
+                                </figcaption>
+                                <p class="price">500$</p>
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!-- .... -->
+            </div>
+            <div class="carousel-item">
+                <!-- ... -->
+            </div>
+            <div class="carousel-item">
+                <!-- ... -->
+            </div>
+            </div>
+            <!-- banner -->
+
+
+            
+            <section id="aa-banner">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">        
+                    <div class="row">
+                      <div class="aa-banner-area">
+                      <a href="#"><img src="/2TShop-main/Resources/img/fashion-banner.jpg" alt="fashion banner img"></a>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+
+
+
+
+            <footer id="aa-footer">
+              <!-- footer bottom -->
+              <div class="aa-footer-top">
+               <div class="container">
+                  <div class="row">
+                  <div class="col-md-12">
+                    <div class="aa-footer-top-area">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                          <div class="aa-footer-widget">
+                            <h3>Main Menu</h3>
+                            <ul class="aa-footer-nav">
+                              <li><a href="#">Our Services</a></li>
+                              <li><a href="#">Our Products</a></li>
+                              <li><a href="#">About Us</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                          <div class="aa-footer-widget">
+                            <div class="aa-footer-widget">
+                              <h3>Knowledge Base</h3>
+                              <ul class="aa-footer-nav">
+                                <li><a href="#">Delivery</a></li>
+                                <li><a href="#">Returns</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Discount</a></li>
+                                <li><a href="#">Special Offer</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                          <div class="aa-footer-widget">
+                              <h3>Send Email</h3>
+                              <ul class="aa-footer-nav">
+                                 <li><a >Send email to receive promotion </a></li>
+                                <li><form  action="">
+                                <label for="">Username or Email address<span>*</span></label>
+                                <input type="text" placeholder="Username or email">
+                                <button class="" type="submit">Send</button></form></li>             
+                              </ul>
+                            </div>
+                          </div>
+                        
+                        <div class="col-md-3 col-sm-6">
+                          <div class="aa-footer-widget">
+                            <div class="aa-footer-nav">
+                              <h3>Contact Us</h3>
+                              <address>
+                                <p>Km29 Đại lộ Thăng Long, huyện Thạch Thất, Hà Nội </p>
+                                <p><span class="fa fa-phone"></span>+1 212-982-4589</p>
+                                <p><span class="fa fa-envelope"></span>dailyshop@gmail.com</p>
+                              </address>
+                              <div class="aa-footer-social">
+                                <a href="#"><span class="fa fa-facebook"></span></a>
+                                <a href="#"><span class="fa fa-twitter"></span></a>
+                                <a href="#"><span class="fa fa-google-plus"></span></a>
+                                <a href="#"><span class="fa fa-youtube"></span></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               </div>
+              </div>
+              <!-- footer-bottom nếu có muốn thêm = = -->
+              
+            </footer>
+
+
+
+        
+    
+
+    <!-- Footer -->
+    
+    
+
+  
+    <!-- JS -->
+    <script src="/2TShop-main/Resources/js/script.js"></script>
+    <!-- BOOTSTRAP 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+</html>
